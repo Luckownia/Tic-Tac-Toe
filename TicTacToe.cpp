@@ -18,6 +18,53 @@ void board()
   cout<<square[6]<<" | "<<square[7]<<" | "<< square[8]<<endl; 
   cout<<endl;
 }
+int checkwin(){
+      // w poziomie 
+     if(square[0]==square[1] && square[1]==square[2])
+     {
+      cout<<"Wygrana";
+      return 1;
+     }
+     else if(square[3]==square[4] && square[4]==square[5])
+     {
+      cout<<"Wygrana";
+      return 1;
+     }
+     else if(square[6]==square[7] && square[7]==square[8])
+     {
+      cout<<"Wygrana";
+      return 1;
+     }
+      //w pionie
+    else if(square[0]==square[3] && square[3]==square[6])
+    {
+      cout<<"Wygrana";
+      return 1;
+    }
+    else if(square[1]==square[4] && square[4]==square[7])
+    {
+      cout<<"Wygrana";
+      return 1;
+    }
+    else if(square[2]==square[5] && square[5]==square[8])
+    {
+      cout<<"Wygrana";
+      return 1;
+    }
+    // w skosie 
+    else if(square[0]==square[4] && square[4]==square[8])
+    {
+      cout<<"Wygrana";
+      return 1;
+    }
+    else if(square[2]==square[4] && square[4]==square[6])
+    {
+      cout<<"Wygrana";
+      return 1;
+    }
+      
+  return 0;
+}
 
 int main()
 { 
