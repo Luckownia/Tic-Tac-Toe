@@ -65,6 +65,19 @@ int checkwin(){
       
   return 0;
 }
+void player1_move()
+{
+    int player1;
+    cout<<"Player 1 twoj ruch: ";
+    cin>>player1;
+    if(square[(player1-1)]=='x' || square[(player1-1)]=='o' ){
+      cout<<"Ta pozycja juz zajeta wybierz ponownie"<<endl;
+      player1_move();
+    }
+    square[(player1-1)]='x';
+    checkwin();
+    board();
+}
 
 int main()
 { 
