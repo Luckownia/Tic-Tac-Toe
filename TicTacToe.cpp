@@ -78,6 +78,19 @@ void player1_move()
     checkwin();
     board();
 }
+void player2_move()
+{
+    int player2;
+    cout<<"Player 2 twoj ruch: ";
+    cin>>player2;
+    if(square[(player2-1)]=='x' || square[(player2-1)]=='o'){
+      cout<<"Ta pozycja juz zajeta wybierz ponownie"<<endl;
+      player2_move();
+    }
+    square[(player2-1)]='o';
+    checkwin();
+    board();
+}
 
 int main()
 { 
