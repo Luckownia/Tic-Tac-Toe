@@ -94,6 +94,27 @@ void player2_move()
 
 int main()
 { 
-
+   board();
+    player1_move();
+    ifwin=checkwin();
+    if(ifwin==1)
+    { 
+      cout<<" Player 1";
+      break;
+    }
+    player2_move();
+    ifwin==checkwin();
+    if(ifwin==1)
+    {
+      cout<<" Player 2";
+      break;
+    }
+    counter++;
+    if(counter==4)
+    {
+      cout<<"Remis brak zwyciezcow";
+      ifplay=false;
+      break;
+    }
   return 0;
 }
