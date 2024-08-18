@@ -16,7 +16,7 @@ To run the Tic Tac Toe game, you need a C++ compiler installed on your machine. 
 
 bash
 Copy code
-git clone https://github.com/your-username/tic-tac-toe.git
+git clone https://github.com/Luckownia/Tic-Tac-Toe.git
 Navigate to the project directory:
 
 bash
@@ -29,7 +29,7 @@ After compiling the code, run the executable file generated.
 
 bash
 Copy code
-./tic_tac_toe.exe
+./Tic-Tac-Toe.exe
 Follow the on-screen instructions to make your moves.
 
 The game will display the current state of the board after each move.
